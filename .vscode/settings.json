@@ -1,10 +1,14 @@
 {
-    "workbench.colorCustomizations": {
-        "commandCenter.border": "#15202b99",
-        "titleBar.activeBackground": "#f3976c",
-        "titleBar.activeForeground": "#15202b",
-        "titleBar.inactiveBackground": "#f3976c99",
-        "titleBar.inactiveForeground": "#15202b99"
-    },
-    "peacock.remoteColor": "#f3976c"
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#15202b99",
+    "titleBar.activeBackground": "#f3976c",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#f3976c99",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.remoteColor": "#f3976c",
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "files.associations": {
+    "*.pcss": "scss"
+  }
 }
