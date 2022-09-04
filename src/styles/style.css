@@ -3,3 +3,25 @@
 @import "./utilities/normalize.pcss";
 
 @import "./utilities/fonts.pcss";
+
+@import "./utilities/margins.pcss";
+
+@import "./utilities/scroll.pcss";
+
+@import "./components/bg.pcss";
+
+@import "./components/btn.pcss";
+
+@import "./components/form.pcss";
+
+@import "./components/lightbox.pcss";
+
+@import "./components/portfolio.pcss";
+
+@import "./components/table.pcss";
+
+@import "./blocks/bloc.pcss";
+
+@import "./blocks/hero.pcss";
+
+@import "./blocks/navbar.pcss";
