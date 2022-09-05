@@ -67,7 +67,7 @@
   }
 
   .icon-bar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0 0 0 50%);
     width: 26px;
   }
 }
@@ -158,7 +158,7 @@ nav .caret {
 @media (max-width: 767px) {
   .navbar .nav {
     padding-top: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0 0 0 20%);
     float: none !important;
   }
 
@@ -169,14 +169,15 @@ nav .caret {
 
   .nav > li {
     margin-top: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0 0 0 10%);
+    background: rgba(0 0 0 5%);
     text-align: left;
     padding-left: 15px;
     width: 100%;
-  }
-  .nav > li:hover {
-    background: rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      background: rgba(0 0 0 8%);
+    }
   }
 
   .dropdown .dropdown a .caret {
@@ -189,11 +190,11 @@ nav .caret {
   }
 
   #hero-bloc .navbar .nav {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0 0 0 80%);
   }
 
   #hero-bloc .navbar .nav a {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255 255 255 60%);
   }
 
   .hero {
@@ -208,7 +209,6 @@ nav .caret {
   .navbar-collapse {
     padding: 0;
     overflow-x: hidden;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
