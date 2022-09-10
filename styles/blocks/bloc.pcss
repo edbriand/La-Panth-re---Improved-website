@@ -1,7 +1,8 @@
 .bloc {
   width: 100%;
   clear: both;
-  background: 50% 50% no-repeat;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   padding: 0 50px;
   background-size: cover;
   position: relative;
@@ -10,18 +11,27 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-}
 
-.bloc .container {
-  padding-left: 0;
-  padding-right: 0;
+  &.bgc-atomic-tangerine {
+    background-color: var(--color-atomic-tangerine);
+  }
 
-  h2 {
-    width: 80%;
-    max-width: 620px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #444;
+  &.bg-t-edge {
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+
+    h2 {
+      width: 80%;
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #444;
+    }
   }
 }
 
@@ -91,7 +101,7 @@
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-  background: rgba(255 255 255 100%);
+  background-color: rgba(255 255 255 100%);
 }
 
 .d-bloc .panel {
