@@ -1,44 +1,21 @@
-root {
-  --grey: #575757;
+:root {
+  --color-grey: #575757;
+  --color-atomic-tangerine: #f3976c;
+  --color-atomic-tangerine-dark: #c27956;
+  --color-dark-slate-blue: #364577;
+  --color-white: white;
 }
 
 .white {
-  color: #fff !important;
-}
-
-.bgc-white {
-  background-color: #fff;
-}
-
-.black-background {
-  background-color: rgba(165 147 99 70%);
-  padding: 40px;
-}
-
-.bgc-dark-slate-blue {
-  background-color: #364577;
-}
-
-.bgc-atomic-tangerine {
-  background-color: #f3976c;
+  color: var(--color-white) !important;
 }
 
 .tc-white {
-  color: #f3976c !important;
-}
-
-.btn-atomic-tangerine {
-  background: #f3976c;
-  color: #fff !important;
-}
-
-.btn-atomic-tangerine:hover {
-  background: #c27956 !important;
-  color: #fff !important;
+  color: var(--color-atomic-tangerine) !important;
 }
 
 .ltc-white {
-  color: #fff !important;
+  color: var(--color-white) !important;
 }
 
 .ltc-white:hover {
@@ -46,14 +23,14 @@ root {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: var(--color-atomic-tangerine) !important;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
+  color: var(--color-atomic-tangerine-dark) !important;
 }
 
 .icon-dark-slate-blue {
-  color: #364577 !important;
-  border-color: #364577 !important;
+  color: var(--color-dark-slate-blue) !important;
+  border-color: var(--color-dark-slate-blue) !important;
 }
