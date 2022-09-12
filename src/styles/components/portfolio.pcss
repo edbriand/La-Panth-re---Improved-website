@@ -1,5 +1,20 @@
 .portfolio.bloc {
   background-repeat: no-repeat;
+
+  h2 {
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.portfolio-box {
+  padding-left: 48px;
+  padding-right: 48px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 48px;
+  }
 }
 
 .portfolio-thumb {
@@ -9,6 +24,11 @@
 .portfolio-row {
   margin-bottom: 44px;
   margin-top: 50px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .avatar {
