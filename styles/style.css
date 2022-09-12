@@ -8,7 +8,7 @@
 
 @import "./utilities/scroll.pcss";
 
-@import "./components/bg.pcss";
+@import "./utilities/bg.pcss";
 
 @import "./components/btn.pcss";
 
@@ -17,6 +17,8 @@
 @import "./components/lightbox.pcss";
 
 @import "./components/portfolio.pcss";
+
+@import "./components/service.pcss";
 
 @import "./components/table.pcss";
 

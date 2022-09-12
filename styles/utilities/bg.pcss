@@ -60,6 +60,21 @@
   }
 }
 
+.bg-bottom {
+  background-image: url("img/color-design-bottom_L.jpg");
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    filter: blur(2px);
+  }
+}
+
 .bg-presentation {
   background-image: url("img/image-de-presentation_L.jpg");
 
