@@ -7,32 +7,37 @@
 }
 
 .white {
-  color: var(--color-white) !important;
+  color: var(--color-white);
 }
 
 .tc-white {
-  color: var(--color-atomic-tangerine) !important;
+  color: var(--color-atomic-tangerine);
 }
 
 .ltc-white {
-  color: var(--color-white) !important;
+  color: var(--color-white);
 }
 
 .ltc-white:hover {
-  color: #ccc !important;
+  color: #ccc;
 }
 
 .ltc-atomic-tangerine {
-  color: var(--color-atomic-tangerine) !important;
+  color: var(--color-atomic-tangerine);
 }
 
 .ltc-atomic-tangerine:hover {
-  color: var(--color-atomic-tangerine-dark) !important;
+  color: var(--color-atomic-tangerine-dark);
 }
 
 .icon-dark-slate-blue {
-  color: var(--color-dark-slate-blue) !important;
-  border-color: var(--color-dark-slate-blue) !important;
+  color: var(--color-dark-slate-blue);
+  border-color: var(--color-dark-slate-blue);
+}
+
+.icon-white {
+  color: var(--color-white);
+  border-color: var(--color-white);
 }
 
 *,
@@ -53,6 +58,12 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a,
@@ -109,11 +120,11 @@ a {
 }
 
 .icon-md {
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 .icon-lg {
-  font-size: 60px !important;
+  font-size: 60px;
 }
 
 .statement-bloc-text {
@@ -137,7 +148,7 @@ p {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  color: #333 !important;
+  color: #333;
 }
 
 h2 {
@@ -149,7 +160,7 @@ h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #333 !important;
+  color: #333;
 }
 
 .med-width-whitespace {
@@ -159,12 +170,12 @@ h3 {
 }
 
 h4 {
-  color: #333 !important;
+  color: #333;
 }
 
 .bold-link {
   font-weight: 900;
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .quote {
@@ -205,8 +216,8 @@ h4 {
   h5,
   h6,
   p {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -370,6 +381,14 @@ h4 {
     opacity: 0.65;
   }
 
+.bg-smoke {
+  background-image: url("img/smoke2.png");
+}
+
+.bg-smoke.bloc {
+    background-position-y: 58%;
+  }
+
 .black-background {
   background-color: rgba(165 147 99 70%);
   padding: 40px;
@@ -433,6 +452,10 @@ button {
     display: none
 }
   }
+
+.form-bloc .container {
+  padding-top: 30px;
+}
 
 .form-control {
   border-color: rgba(0 0 0 10%);
@@ -617,6 +640,17 @@ a[data-lightbox]:hover img {
   box-shadow: 0 4px 9px rgba(0 0 0 30%);
 }
 
+.service-container {
+  color: var(--color-white);
+  background-color: var(--color-dark-slate-blue);
+  padding: 20px;
+  border-radius: 28px;
+}
+
+.service-container h3 {
+    color: var(--color-white);
+  }
+
 .service-box {
   padding-left: 28px;
   padding-right: 28px;
@@ -670,7 +704,6 @@ a[data-lightbox]:hover img {
       max-width: 620px;
       margin-left: auto;
       margin-right: auto;
-      color: #444;
     }
 
 .bloc-lg {
@@ -943,6 +976,80 @@ a[data-lightbox]:hover img {
     text-align: center;
   }
 }
+
+.contact-form {
+  color: var(--color-white);
+  background-color: var(--color-dark-slate-blue);
+  padding: 28px;
+  border-radius: 28px;
+}
+
+.contact-form label {
+    font-size: 18px;
+  }
+
+.contact-info {
+  padding: 28px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: end;
+  }
+
+.contact-info p::after {
+      display: inline-block;
+      font: var(--fa-font-solid);
+      font-weight: 900;
+      font-size: 28px;
+      color: var(--color-dark-slate-blue);
+      margin-left: 10px;
+    }
+
+.contact-info p:nth-child(1)::after {
+        content: "\f0e0";
+      }
+
+.contact-info p:nth-child(2)::after {
+        content: "\f3c5";
+      }
+
+.contact-info p:nth-child(3)::after {
+        content: "\f57d";
+      }
+
+@media (max-width: 720px) {
+
+.contact-hero.bloc {
+    background-size: auto
+}
+  }
+
+.contact-hero.bloc .row {
+    padding-top: 20px;
+  }
+
+@media (min-width: 760px) {
+
+.contact-hero.bloc .row h1 {
+        font-size: 52px
+    }
+      }
+
+@media (min-width: 760px) {
+
+.contact-hero.bloc .row p {
+        font-size: 20px
+    }
+      }
+
+@media (max-width: 720px) {
+
+.contact-hero-wave {
+    height: 0
+}
+  }
 
 #bloc-1-hero h1 {
   font-size: 38px;
