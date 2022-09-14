@@ -24,6 +24,8 @@
 
 @import "./blocks/bloc.pcss";
 
+@import "./blocks/contact.pcss";
+
 @import "./blocks/hero.pcss";
 
 @import "./blocks/navbar.pcss";
