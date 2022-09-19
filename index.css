@@ -18,10 +18,6 @@
   color: var(--color-white);
 }
 
-.ltc-white:hover {
-  color: #ccc;
-}
-
 .ltc-atomic-tangerine {
   color: var(--color-atomic-tangerine);
 }
@@ -38,6 +34,11 @@
 .icon-white {
   color: var(--color-white);
   border-color: var(--color-white);
+}
+
+.icon-tangerine {
+  color: var(--color-atomic-tangerine);
+  border-color: var(--color-atomic-tangerine);
 }
 
 *,
@@ -69,7 +70,7 @@ main {
 a,
 button {
   transition: all 0.3s ease-in-out;
-  outline: none !important;
+  outline: none;
 }
 
 a:hover {
@@ -182,8 +183,7 @@ h4 {
   width: 100%;
   font-family: helvetica, sans-serif;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 40px auto;
 }
 
 .quote-text,
@@ -291,7 +291,7 @@ h4 {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-  background-size: auto !important;
+  background-size: auto;
 }
 
 .bg-t-edge {
@@ -422,7 +422,7 @@ h4 {
 }
 
 button {
-  outline: none !important;
+  outline: none;
 }
 
 .btn-rd {
@@ -438,12 +438,22 @@ button {
 
 .btn-atomic-tangerine {
   background-color: var(--color-atomic-tangerine);
-  color: var(--color-white) !important;
+  color: var(--color-white);
 }
 
 .btn-atomic-tangerine:hover {
-  background-color: var(--color-atomic-tangerine-dark) !important;
-  color: var(--color-white) !important;
+  background-color: var(--color-atomic-tangerine-dark);
+  color: var(--color-white);
+}
+
+.btn-dark-slate-blue {
+  background-color: var(--color-dark-slate-blue);
+  color: var(--color-white);
+}
+
+.btn-dark-slate-blue:hover {
+  background-color: black;
+  color: var(--color-white);
 }
 
 @media (max-width: 767px) {
@@ -596,6 +606,12 @@ a[data-lightbox]:hover img {
   }
 }
 
+.partner-title {
+  margin-top: 40px;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
 .portfolio.bloc {
   background-repeat: no-repeat;
 }
@@ -620,7 +636,7 @@ a[data-lightbox]:hover img {
   }
 
 .portfolio-thumb {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .portfolio-row {
@@ -821,13 +837,7 @@ a[data-lightbox]:hover img {
   border-color: rgba(0 0 0 30%);
 }
 
-.l-bloc h1 a:hover,
-.l-bloc h2 a:hover,
-.l-bloc h3 a:hover,
-.l-bloc h4 a:hover,
-.l-bloc h5 a:hover,
-.l-bloc h6 a:hover,
-.l-bloc p a:hover {
+.l-bloc a:hover {
   color: rgba(0 0 0 / 100%);
 }
 
@@ -989,33 +999,44 @@ a[data-lightbox]:hover img {
   }
 
 .contact-info {
-  padding: 28px;
+  padding: 10px 50px 0;
 }
+
+@media (max-width: 767px) {
+
+.contact-info {
+    padding: 50px 50px 0
+}
+  }
+
+.contact-info iframe {
+    width: 100%;
+  }
 
 .contact-info p {
     font-size: 20px;
     margin-bottom: 20px;
-    text-align: end;
+    text-align: start;
   }
 
-.contact-info p::after {
+.contact-info p::before {
       display: inline-block;
       font: var(--fa-font-solid);
       font-weight: 900;
       font-size: 28px;
       color: var(--color-dark-slate-blue);
-      margin-left: 10px;
+      margin-right: 14px;
     }
 
-.contact-info p:nth-child(1)::after {
+.contact-info p:nth-child(1)::before {
         content: "\f0e0";
       }
 
-.contact-info p:nth-child(2)::after {
+.contact-info p:nth-child(2)::before {
         content: "\f3c5";
       }
 
-.contact-info p:nth-child(3)::after {
+.contact-info p:nth-child(3)::before {
         content: "\f57d";
       }
 
@@ -1069,7 +1090,7 @@ a[data-lightbox]:hover img {
 
 .cta-hero {
   margin-top: 22px;
-  color: white !important;
+  color: white;
   text-transform: uppercase;
   padding: 12px 28px;
   font-size: 16px;
@@ -1080,6 +1101,16 @@ a[data-lightbox]:hover img {
   max-width: 400px;
   margin: auto;
 }
+
+.social .icon-md {
+    color: var(--color-white);
+    border-color: var(--color-white);
+  }
+
+.social .icon-md:hover {
+      color: var(--color-dark-slate-blue);
+      border-color: var(--color-dark-slate-blue);
+    }
 
 .navbar {
   margin-bottom: 0;
@@ -1130,7 +1161,7 @@ a[data-lightbox]:hover img {
 }
 
 .nav > li > .dropdown a {
-    background-color: transparent !important;
+    background-color: transparent;
     display: block;
     padding: 14px 15px;
   }
@@ -1150,7 +1181,7 @@ a[data-lightbox]:hover img {
 }
 
 .navbar-toggle:hover {
-    background-color: transparent !important;
+    background-color: transparent;
   }
 
 .navbar-toggle .icon-bar {
@@ -1191,7 +1222,7 @@ nav .caret {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  margin: 6px -5px 0 0 !important;
+  margin: 6px -5px 0 0;
   float: right;
 }
 
@@ -1245,7 +1276,7 @@ nav .caret {
   .navbar .nav {
     padding-top: 0;
     border-top: 1px solid rgba(0 0 0 20%);
-    float: none !important;
+    float: none;
   }
 
   .navbar.row {
@@ -1268,7 +1299,7 @@ nav .caret {
 
   .dropdown .dropdown a .caret {
     float: none;
-    margin: 5px 0 0 10px !important;
+    margin: 5px 0 0 10px;
     border: 4px solid black;
     border-bottom-color: transparent;
     border-right-color: transparent;
