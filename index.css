@@ -197,14 +197,14 @@ h4 {
 }
 
 .quote-text {
-  color: #686868;
+  color: #444;
   font-weight: 500;
   font-style: italic;
   margin-bottom: 1px;
 }
 
 .quote-source {
-  color: #999;
+  color: #666;
   font-weight: 300;
 }
 
@@ -231,7 +231,7 @@ h4 {
 
 .mg-md {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .mg-md.mg-close {
@@ -339,7 +339,8 @@ h4 {
 }
 
 .bg-banniere {
-  background-image: url("img/agence-la-panthere.jpg");
+  background-image: url("img/hero-pic_L.jpg");
+  bottom: 0;
 }
 
 .bg-banniere::before {
@@ -483,17 +484,16 @@ a[data-lightbox]:hover::before {
   content: "+";
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-  font-size: 32px;
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background-color: rgba(0 0 0 60%);
-  color: #fff;
+  color: var(--color-dark-slate-blue);
   font-weight: 100;
   z-index: 1;
   position: absolute;
-  top: 50%;
+  top: 44%;
   transform: translateY(-50%);
 }
 
@@ -787,10 +787,6 @@ a[data-lightbox]:hover img {
   color: rgba(0 0 0 60%);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
-  background-color: rgba(255 255 255 100%);
-}
-
 .d-bloc .panel {
   color: rgba(0 0 0 50%);
 }
@@ -896,10 +892,6 @@ a[data-lightbox]:hover img {
 .d-bloc .panel .btn-wire:hover {
   color: rgba(0 0 0 70%);
   border-color: rgba(0 0 0 30%);
-}
-
-.l-bloc .navbar-toggle .icon-bar {
-  color: rgba(0 0 0 60%);
 }
 
 @media (max-width: 1024px) {
@@ -1011,6 +1003,7 @@ a[data-lightbox]:hover img {
 
 .contact-info iframe {
     width: 100%;
+    border: 0;
   }
 
 .contact-info p {
@@ -1089,7 +1082,7 @@ a[data-lightbox]:hover img {
 }
 
 .cta-hero {
-  margin-top: 22px;
+  margin-top: 48px;
   color: white;
   text-transform: uppercase;
   padding: 12px 28px;
@@ -1185,7 +1178,7 @@ a[data-lightbox]:hover img {
   }
 
 .navbar-toggle .icon-bar {
-    background-color: rgba(0 0 0 50%);
+    background-color: black;
     width: 26px;
   }
 
