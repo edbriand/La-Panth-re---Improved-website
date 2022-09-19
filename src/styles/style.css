@@ -16,6 +16,8 @@
 
 @import "./components/lightbox.pcss";
 
+@import "./components/partner.pcss";
+
 @import "./components/portfolio.pcss";
 
 @import "./components/service.pcss";
