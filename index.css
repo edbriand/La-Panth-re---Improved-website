@@ -1,13 +1,19 @@
 :root {
   --color-grey: #575757;
+  --color-atomic-tangerine-old: #f3976c;
   --color-atomic-tangerine: #f3976c;
   --color-atomic-tangerine-dark: #c27956;
-  --color-dark-slate-blue: #364577;
+  --color-dark-slate-blue: #313f6d;
+  --color-dark-slate-blue-old: #364577;
   --color-white: white;
 }
 
 .white {
   color: var(--color-white);
+}
+
+.blue {
+  color: var(--color-dark-slate-blue);
 }
 
 .tc-white {
@@ -439,12 +445,12 @@ button {
 
 .btn-atomic-tangerine {
   background-color: var(--color-atomic-tangerine);
-  color: var(--color-white);
+  color: var(--color-dark-slate-blue);
 }
 
 .btn-atomic-tangerine:hover {
-  background-color: var(--color-atomic-tangerine-dark);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-atomic-tangerine);
 }
 
 .btn-dark-slate-blue {
@@ -602,7 +608,7 @@ a[data-lightbox]:hover img {
 .partner-title {
   margin-top: 40px;
   font-size: 18px;
-  color: var(--color-white);
+  color: var(--color-dark-slate-blue);
 }
 
 .portfolio.bloc {
@@ -961,11 +967,10 @@ a[data-lightbox]:hover img {
 
 .cta-hero {
   margin-top: 48px;
-  color: white;
   text-transform: uppercase;
   padding: 12px 28px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .social {
@@ -974,13 +979,13 @@ a[data-lightbox]:hover img {
 }
 
 .social .icon-md {
-    color: var(--color-white);
-    border-color: var(--color-white);
+    color: var(--color-dark-slate-blue);
+    border-color: var(--color-dark-slate-blue);
   }
 
 .social .icon-md:hover {
-      color: var(--color-dark-slate-blue);
-      border-color: var(--color-dark-slate-blue);
+      color: var(--color-white);
+      border-color: var(--color-white);
     }
 
 .navbar {
