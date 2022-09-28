@@ -340,12 +340,8 @@ h4 {
 }
   }
 
-.bg-dots-bg {
-  background-image: url("img/dots-bg.png");
-}
-
 .bg-banniere {
-  background-image: url("img/hero-pic_L.jpg");
+  background-image: url("img/hero-pic_L.webp");
   bottom: 0;
 }
 
@@ -360,7 +356,7 @@ h4 {
   }
 
 .bg-bottom {
-  background-image: url("img/color-design-bottom_L.jpg");
+  background-image: url("img/color-design-bottom_L.webp");
 }
 
 .bg-bottom::before {
@@ -375,7 +371,7 @@ h4 {
   }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation_L.jpg");
+  background-image: url("img/image-de-presentation_L.webp");
 }
 
 .bg-presentation::before {
@@ -389,7 +385,7 @@ h4 {
   }
 
 .bg-smoke {
-  background-image: url("img/smoke2.png");
+  background-image: url("img/smoke.webp");
 }
 
 .bg-smoke.bloc {
